@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--clr-blue-300);
+  color: var(--clr-white);
+  font-family: "Genos", sans-serif;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --clr-blue-300: #7db0de;
+  --clr-blue-500: #1d5c96;
+  --clr-blue-700: #12395d;
+  --clr-white: #f0f8ff;
+  --clr-numbers: #00ffff;
+  --ff-cursive: "Vujahday Script", cursive;
+  --ff-jose: "Josefin Sans", sans-serif;
+}

@@ -1,0 +1,39 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding-block: 2rem;
+  gap: 2rem;
+}
+
+.footer p {
+  font-size: 1.5rem;
+}
+
+.contactMe {
+  font-size: 2.5rem;
+  color: var(--clr-blue-700);
+}
+
+.footer__nav {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.signed {
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--clr-blue-500);
+  font-family: var(--ff-cursive);
+}
+
+.signed:hover {
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

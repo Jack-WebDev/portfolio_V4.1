@@ -1,0 +1,19 @@
+.project__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .project__container {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project__container {
+    width: 80%;
+  }
+}

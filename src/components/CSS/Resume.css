@@ -1,0 +1,45 @@
+.cv__container {
+  display: grid;
+  gap: 2rem;
+  width: min(80%, 1400px);
+  margin-inline: auto;
+  margin-block-start: 3rem;
+}
+
+.education__container {
+  display: grid;
+  gap: 1rem;
+}
+
+.education__container h2,
+.experience__container h2,
+.skills__container h2 {
+  font-family: var(--ff-cursive);
+  color: var(--clr-blue-700);
+  font-size: 3.5rem;
+}
+
+.education__container h3,
+.experience__container h3 {
+  font-size: 2rem;
+}
+
+.education__container h4,
+.experience__container h4 {
+  font-size: 1rem;
+}
+
+.experience__container p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
