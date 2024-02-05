@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   FaRegFileCode,
   FaBriefcase,
@@ -9,12 +9,28 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import "./CSS/Header.css";
+import NavLinks from "./NavLinks.json";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const renderIcon = (iconName: string) => {
+    switch (iconName) {
+      case "FaHome":
+        return <FaHome />;
+      case "FaFolderOpen":
+        return <FaFolderOpen />;
+      case "FaBriefcase":
+        return <FaBriefcase />;
+      case "FaRegFileCode":
+        return <FaRegFileCode />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -28,26 +44,18 @@ const Header = () => {
           {isOpen ? <FaTimes color="#FFF" /> : <FaBars color="#FFF" />}
         </div>
         <ul className={`nav__menu ${isOpen ? "open" : ""}`}>
-          <li className="nav__item">
-            <Link className="nav__link" to={"/"}>
-              <FaHome color="#FFF" /> Home
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link className="nav__link" to={"/mywork"}>
-              <FaFolderOpen color="#FFF" /> My Work
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link className="nav__link" to={"/services"}>
-              <FaBriefcase color="#FFF" /> My Services
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link className="nav__link" to={"/resume"}>
-              <FaRegFileCode color="#FFF" /> My Resume
-            </Link>
-          </li>
+          {NavLinks.map((navLink) => (
+            <li className="nav__item" key={navLink.id}>
+              <NavLink
+                className={({ isActive }) => {
+                  return isActive ? "active nav__link" : "nav__link";
+                }}
+                to={navLink.path}
+              >
+                {renderIcon(navLink.icon)} {navLink.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

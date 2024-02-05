@@ -54,6 +54,9 @@ header {
   text-decoration: none;
 }
 
+.nav__link.active {
+  color: var(--clr-blue-700);
+}
 
 
 @media screen and (min-width: 768px) {

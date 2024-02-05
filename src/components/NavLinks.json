@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name": "Home",
+        "path": "/",
+        "icon": "FaHome"
+    },
+    {
+        "id":2,
+        "name": "My Work",
+        "path": "/mywork",
+        "icon": "FaFolderOpen"
+    },
+    {
+        "id":3,
+        "name": "My Services",
+        "path": "/services",
+        "icon": "FaBriefcase"
+    },
+    {
+        "id":4,
+        "name": "My Resume",
+        "path": "/resume",
+        "icon": "FaRegFileCode"
+    }
+]
