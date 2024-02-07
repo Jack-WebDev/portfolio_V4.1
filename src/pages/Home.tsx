@@ -21,7 +21,7 @@ const Home = () => {
           <Card
             cardBadge="NEW"
             title="Coffeeroasters"
-            imgSrc="src\assets\missing-parts.jpg"
+            imgSrc="src/assets/missing-parts.jpg"
             details="Coffeeroasters brews the finest coffee with passion, delivering unparalleled flavor and satisfaction to every cup."
           />
         </Link>
@@ -29,7 +29,7 @@ const Home = () => {
         <Link to={"https://jack-webdev.github.io/photosnap/"} target="_blank">
           <Card
             title="Photo Snap"
-            imgSrc="src\assets\photoSnap.webp"
+            imgSrc="src/assets/photoSnap.webp"
             details="PhotoSnap captures timeless moments with expert precision, delivering unparalleled quality and unforgettable memories."
           />
         </Link>
@@ -38,7 +38,7 @@ const Home = () => {
           <Card
             cardBadge="In Dev"
             title="Audiophile"
-            imgSrc="src\assets\audiophile.webp"
+            imgSrc="src/assets/audiophile.webp"
             details="Audiophile offers premium headsets and earphones, delivering unparalleled sound quality and comfort for ultimate satisfaction."
           />
         </Link>
@@ -47,7 +47,7 @@ const Home = () => {
           <Card
             cardBadge="In Dev"
             title="CelestialHub"
-            imgSrc="src\assets\space.jpg"
+            imgSrc="src/assets/space.jpg"
             details="Discover cosmic wonders at CelestialHub: space missions, breathtaking imagery, latest discoveries, and educational resources for all ages."
           />
         </Link>
