@@ -11,7 +11,7 @@ const Hero = () => {
       </p>
 
       <p className="title">Software Developer | Freelancer</p>
-      <Button title="Let's Connect!" href="#" />
+      <Button title="Let's Connect!" href="https://www.linkedin.com/in/katlegomabaso/" />
     </div>
   );
 };

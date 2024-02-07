@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaLinkedin, FaWhatsapp, FaTwitter, FaGithub } from "react-icons/fa";
 import "./CSS/Footer.css";
 
@@ -12,13 +13,29 @@ const Footer = () => {
 
       <nav className="footer__nav">
         <div className="socials">
-          <FaGithub fontSize={"1.5rem"} />
-          <FaLinkedin fontSize={"1.5rem"} />
+          <Link to={"https://github.com/Jack-WebDev"} target="_blank">
+            <FaGithub color="#FFF" fontSize={"1.5rem"} />
+          </Link>
+          <Link
+            to={"https://www.linkedin.com/in/katlegomabaso/"}
+            target="_blank"
+          >
+            <FaLinkedin color="#FFF" fontSize={"1.5rem"} />
+          </Link>
           <FaTwitter fontSize={"1.5rem"} /> <FaWhatsapp fontSize={"1.5rem"} />{" "}
-          <span>(+27) 67 016 6982</span>
+          <span style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+            (+27) 67 016 6982
+          </span>
         </div>
         <p>
-          &copy; {new Date().getFullYear()} <a className="signed" href="#">Jack WebDev</a>
+          &copy; {new Date().getFullYear()}{" "}
+          <Link
+            className="signed"
+            to={"https://github.com/Jack-WebDev"}
+            target="_blank"
+          >
+            Jack WebDev
+          </Link>
         </p>
       </nav>
     </footer>

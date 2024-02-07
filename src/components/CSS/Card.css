@@ -19,7 +19,7 @@
 
 .card__container h2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   font-family: var(--ff-jose);

@@ -12,7 +12,7 @@ const Card = ({ imgSrc, title, details, cardBadge }: CardProps) => {
     <div className="card__container">
       <img src={imgSrc} alt={title} />
       <div className="content">
-        <h2>{title}{cardBadge && <span className="cardBadge">{cardBadge}</span>}</h2>
+        <h2 style={{textAlign: "start"}}>{title}{cardBadge && <span className="cardBadge">{cardBadge}</span>}</h2>
         <p>{details}</p>
       </div>
     </div>
