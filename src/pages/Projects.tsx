@@ -19,7 +19,7 @@ const Projects = () => {
           <Card
             title="Sunnyside Landing Page"
             details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit!"
-            imgSrc="/assets/SunnySide.jpg"
+            imgSrc="src\assets\SunnySide.jpg"
           />
         </Link>
 
@@ -30,7 +30,7 @@ const Projects = () => {
           <Card
             title="LoopStudios Landing Page"
             details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit!"
-            imgSrc="/assets/LoopStudios.jpg"
+            imgSrc="src\assets\LoopStudios.jpg"
           />
         </Link>
 
@@ -39,7 +39,7 @@ const Projects = () => {
             cardBadge="New"
             title="Planets"
             details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit!"
-            imgSrc="/assets/desktop-planet.jpg"
+            imgSrc="src\assets\desktop-planet.jpg"
           />
         </Link>
       </div>
