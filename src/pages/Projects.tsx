@@ -42,6 +42,14 @@ const Projects = () => {
             imgSrc="desktop-planet.jpg"
           />
         </Link>
+        <Link to={"https://github.com/Jack-WebDev/rest-countries-API.git"} target="_blank">
+          <Card
+            cardBadge="New"
+            title="Countries API"
+            details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit!"
+            imgSrc="desktop-preview.jpg"
+          />
+        </Link>
       </div>
 
       <Footer />
